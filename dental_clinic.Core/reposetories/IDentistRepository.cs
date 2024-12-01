@@ -10,5 +10,10 @@ namespace dental_clinic.Core.reposetories
     public interface IDentistRepository
     {
         public List<dentist> GetAll();
+        public void Add(dentist entist);
+        public dentist GetById(int id);
+        void Remove(dentist dentist);
+        void Update(dentist updatedDentist);
+
     }
 }
